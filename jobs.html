@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - UpGreat Rozgar | Browse Employment Opportunities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-blue-700 font-bold text-xl flex items-center gap-2 cursor-pointer">
+                <div class="p-1 bg-blue-600 rounded text-white"><i class="fas fa-briefcase"></i></div>
+                UpGreat Rozgar
+            </a>
+
+            <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <a href="jobs.html" class="hover:text-blue-600 text-blue-600 font-bold">Find Jobs</a>
+                <a href="employers.html" class="hover:text-blue-600">Hire Staff</a>
+                <a href="about.html" class="hover:text-blue-600">About Us</a>
+            </div>
+
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="text-gray-700 font-medium px-4 py-2 hover:bg-gray-50 rounded-lg">Log in</button>
+                <button
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Sign
+                    up</button>
+            </div>
+
+            <button id="menuTrigger" class="md:hidden text-gray-700 text-2xl focus:outline-none p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b shadow-lg">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="jobs.html" class="text-blue-600 font-bold py-2 border-b border-gray-50">Find Jobs</a>
+                <a href="employers.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Hire Staff</a>
+                <a href="about.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">About Us</a>
+
+                <div class="flex flex-col gap-3 pt-4">
+                    <button
+                        class="w-full text-center py-3 text-blue-600 font-bold border-2 border-blue-600 rounded-xl hover:bg-blue-50">Log
+                        In</button>
+                    <button
+                        class="w-full text-center py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-md">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-600 to-blue-700 py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Find Your Next Opportunity
+            </h1>
+            <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
+                Browse verified jobs across all categories. From entry-level to skilled positions, we connect you to
+                real opportunities near you.
+            </p>
+
+            <div class="bg-white p-2 rounded-2xl shadow-xl flex flex-col md:flex-row gap-2 max-w-3xl mx-auto">
+                <div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-gray-100">
+                    <i class="fas fa-search text-gray-400 mr-3"></i>
+                    <input type="text" placeholder="Job title or skill" class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <div class="flex-1 flex items-center px-4">
+                    <i class="fas fa-map-marker-alt text-gray-400 mr-3"></i>
+                    <input type="text" placeholder="City or Pin" class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <button class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition">
+                    Search Jobs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories Section -->
+    <section class="bg-white py-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-white text-3xl md:text-4xl font-bold mb-4 text-slate-900">Comprehensive Job Categories</h2>
+            <p class="text-gray-600 mb-4 max-w-2xl mx-auto">
+                Browse opportunities by category to find the perfect match for your skills.
+            </p>
+            <p class="text-gray-500 text-sm mb-12 max-w-3xl mx-auto">
+                UpGreat Rozgar supports all major job categories with stronger field execution than traditional
+                platforms
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative overflow-hidden border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Unskilled & Entry-Level</h3>
+                    <p class="text-gray-500 text-sm mb-4">Foundation roles for immediate employment</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• Helpers & Loaders</li>
+                        <li>• Cleaners & Housekeeping</li>
+                        <li>• Factory Workers</li>
+                        <li>• Construction Labour</li>
+                        <li>• Warehouse Staff</li>
+                    </ul>
+
+                    <div class="flex justify-between items-center">
+                        <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-md">High
+                            Demand</span>
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Semi-Skilled & Skilled</h3>
+                    <p class="text-gray-500 text-sm mb-4">Technical expertise and specialized trades</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• Electricians & Plumbers</li>
+                        <li>• Welders & Fitters</li>
+                        <li>• Machine Operators</li>
+                        <li>• Technicians & Mechanics</li>
+                        <li>• Drivers (All Categories)</li>
+                    </ul>
+                    <div class="flex justify-end">
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-truck text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Blue & Grey Collar</h3>
+                    <p class="text-gray-500 text-sm mb-4">Service and operational roles</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• Security Guards</li>
+                        <li>• Delivery Executives</li>
+                        <li>• Field Executives</li>
+                        <li>• Sales Promoters</li>
+                        <li>• Store Staff & Associates</li>
+                        <li>• Call Center Associates</li>
+                    </ul>
+                    <div class="flex justify-end">
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Gig & Flexible Work</h3>
+                    <p class="text-gray-500 text-sm mb-4">On-demand and project-based opportunities</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• Delivery & Logistics Gigs</li>
+                        <li>• Event Staff</li>
+                        <li>• Election & Campaign Workers</li>
+                        <li>• Survey & Data Collection</li>
+                        <li>• Temporary Project Roles</li>
+                    </ul>
+                    <div class="flex justify-between items-center">
+                        <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-md">Fast
+                            Hire</span>
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">White-Collar (Selective)</h3>
+                    <p class="text-gray-500 text-sm mb-4">Professional and support positions</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• HR Recruiters</li>
+                        <li>• Supervisors & Team Leads</li>
+                        <li>• Site Managers</li>
+                        <li>• Coordinators</li>
+                        <li>• MIS & Operations Staff</li>
+                    </ul>
+                    <div class="flex justify-end">
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-white p-8 rounded-2xl text-left shadow-lg hover:shadow-2xl transition-all cursor-pointer relative border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Bulk & Institutional</h3>
+                    <p class="text-gray-500 text-sm mb-4">Large-scale workforce deployment</p>
+                    <ul class="text-xs text-gray-600 space-y-1 mb-6">
+                        <li>• Government Projects</li>
+                        <li>• PSU & Vendor Staffing</li>
+                        <li>• Political Campaigns</li>
+                        <li>• NGO Field Operations</li>
+                        <li>• Corporate Contract Manpower</li>
+                    </ul>
+                    <div class="flex justify-end">
+                        <i
+                            class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 group-hover:translate-x-2 transition-all"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How UpGreat Works -->
+    <section class="bg-slate-50 py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <span
+                class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Simple
+                Process</span>
+            <h2 class="text-4xl font-extrabold text-slate-900 mt-4 mb-2">How UpGreat Works</h2>
+            <p class="text-xl text-gray-600 mb-16">Zero resumes. Direct placement. <span
+                    class="font-bold text-slate-800">Real jobs near you.</span></p>
+
+            <div class="relative grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-gray-200 z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-white border-2 border-blue-600 rounded-full flex items-center justify-center mb-6 relative shadow-sm">
+                        <i class="fas fa-map-marker-alt text-blue-600 text-2xl"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-slate-900 text-white w-6 h-6 rounded-full text-xs flex items-center justify-center font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Local Discovery</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Browse verified jobs available right in your
+                        specific neighborhood. No long commutes.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-white border-2 border-blue-600 rounded-full flex items-center justify-center mb-6 relative shadow-sm">
+                        <i class="fas fa-user-check text-blue-600 text-2xl"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-slate-900 text-white w-6 h-6 rounded-full text-xs flex items-center justify-center font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Instant Verify</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Quick digital ID check and automated skill
+                        matching. Get verified in minutes.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-white border-2 border-blue-600 rounded-full flex items-center justify-center mb-6 relative shadow-sm">
+                        <i class="fas fa-walking text-blue-600 text-2xl"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-slate-900 text-white w-6 h-6 rounded-full text-xs flex items-center justify-center font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Direct Walk-in</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Book an interview slot instantly and walk directly
+                        to the job site. No waiting.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div
+                        class="w-20 h-20 bg-white border-2 border-blue-600 rounded-full flex items-center justify-center mb-6 relative shadow-sm">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-slate-900 text-white w-6 h-6 rounded-full text-xs flex items-center justify-center font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">On-Ground Support</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Our team supports you from day one until you
+                        successfully receive your first pay.</p>
+                </div>
+            </div>
+
+            <div class="mt-24 bg-white border border-slate-200 rounded-3xl p-10 max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-8">Ready to get started?</h3>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-blue-200 flex items-center gap-3">
+                        Register Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="flex items-center gap-2 text-green-600 font-semibold">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Free for Job Seekers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home) -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div
+                class="flex flex-col lg:flex-row items-center justify-between bg-slate-50 p-6 md:p-10 rounded-3xl mb-16 gap-8">
+                <div class="flex items-center gap-4 text-center lg:text-left">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i class="fas fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Need Help Finding a Job?</h4>
+                        <p class="text-sm text-gray-500">Call our helpline for immediate assistance</p>
+                    </div>
+                </div>
+
+                <div class="text-2xl md:text-3xl font-extrabold text-blue-600">
+                    +91 8851479441
+                </div>
+
+                <button
+                    class="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 transition-all shadow-lg shadow-green-100">
+                    <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Job Seekers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="jobs.html" class="hover:text-blue-600">Search Jobs</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register Now</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Skill Training</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Safety Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Employers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="employers.html" class="hover:text-blue-600">Post a Job</a></li>
+                        <li><a href="employers.html" class="hover:text-blue-600">Bulk Hiring Solutions</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Pricing Plans</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Employer Case Studies</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Verification Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Company</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="about.html" class="hover:text-blue-600">About UpGreat</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Press & Media</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Legal & Resources</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Grievance Officer</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Fraud Alert</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1">
+                    <h5 class="font-bold text-slate-900 mb-6">Job Alerts & Updates</h5>
+                    <p class="text-gray-500 text-sm mb-4">Subscribe to stay updated on the latest opportunities.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Enter your email"
+                            class="bg-slate-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-blue-600">
+                        <button
+                            class="bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-all">Subscribe</button>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-3 flex items-center gap-1">
+                        <i class="fas fa-check-circle text-green-500"></i> No spam, unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div
+                    class="flex items-center gap-6 grayscale opacity-60 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                    <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-lg"></i> ISO 9001:2015</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-rocket text-lg"></i> Startup India</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-lock text-lg"></i> 100% Secure</span>
+                </div>
+
+                <div class="text-xs text-gray-400 font-medium">
+                    MADE IN INDIA <span class="ml-1">🇮🇳</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">© 2024 UpGreat Rozgar Solutions Pvt Ltd. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-400 hover:text-white transition-all"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

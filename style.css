@@ -1,0 +1,57 @@
+
+        /* Custom Hover Transitions */
+        .search-container:focus-within {
+            box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.2);
+            border-color: #22c55e;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .category-card {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .category-card:hover {
+            color: #2563eb;
+            transform: scale(1.05);
+        }
+
+        /* Animation for the floating stat card */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+        /* Cursor-following pink glow effect */
+.hover-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-glow::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+        circle at center,
+        rgba(236, 72, 153, 0.35),
+        rgba(236, 72, 153, 0.15),
+        transparent 70%
+    );
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.hover-glow:hover::before {
+    opacity: 1;
+}
+
+ 

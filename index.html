@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpGreat Rozgar - Real Jobs at Real Scale Across India | Employment Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-blue-700 font-bold text-xl flex items-center gap-2 cursor-pointer">
+                <div class="p-1 bg-blue-600 rounded text-white"><i class="fas fa-briefcase"></i></div>
+                UpGreat Rozgar
+            </a>
+
+            <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <a href="index.html" class="hover:text-blue-600 text-blue-600 font-bold">Home</a>
+                <a href="jobs.html" class="hover:text-blue-600">Find Jobs</a>
+                <a href="employers.html" class="hover:text-blue-600">Hire Staff</a>
+                <a href="about.html" class="hover:text-blue-600">About Us</a>
+            </div>
+
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="text-gray-700 font-medium px-4 py-2 hover:bg-gray-50 rounded-lg">Log in</button>
+                <button
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Sign
+                    up</button>
+            </div>
+
+            <button id="menuTrigger" class="md:hidden text-gray-700 text-2xl focus:outline-none p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-white border-b shadow-lg animate-in slide-in-from-top duration-300">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="index.html" class="text-blue-600 font-bold py-2 border-b border-gray-50">Home</a>
+                <a href="jobs.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Find Jobs</a>
+                <a href="employers.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Hire Staff</a>
+                <a href="about.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">About Us</a>
+
+                <div class="flex flex-col gap-3 pt-4">
+                    <button
+                        class="w-full text-center py-3 text-blue-600 font-bold border-2 border-blue-600 rounded-xl hover:bg-blue-50">
+                        Log In
+                    </button>
+                    <button
+                        class="w-full text-center py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-md">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span
+                class="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold mb-6">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                #1 Hiring Platform in Bharat
+            </span>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4">
+                Real Jobs. <br>
+                Real Hiring. <br>
+                <span class="text-green-600">At Real Scale.</span>
+            </h1>
+
+            <p class="text-gray-600 text-lg mb-8 max-w-md">
+                Execution-driven hiring across Bharat — from small towns to metros. Join millions of workers finding
+                trusted jobs every day.
+            </p>
+
+            <div
+                class="search-container bg-white p-2 rounded-2xl shadow-xl border border-gray-200 flex flex-col md:flex-row gap-2 transition-all">
+                <div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-gray-100">
+                    <i class="fas fa-search text-gray-400 mr-3"></i>
+                    <input type="text" id="jobSearch" placeholder="Job title or skill (e.g. Delivery)"
+                        class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <div class="flex-1 flex items-center px-4">
+                    <i class="fas fa-map-marker-alt text-gray-400 mr-3"></i>
+                    <input type="text" id="locationSearch" placeholder="City or Pin"
+                        class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <button id="findJobsBtn"
+                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition transform active:scale-95">
+                    Find Jobs Near Me
+                </button>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-6 text-sm text-gray-500 font-medium">
+                <span class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i> Verified
+                    Employers</span>
+                <span class="flex items-center gap-2"><i class="fas fa-users text-blue-500"></i> On-Ground
+                    Recruiters</span>
+                <span class="flex items-center gap-2"><i class="fas fa-indian-rupee-sign text-green-600"></i> Free for
+                    Candidates</span>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div
+                class="rounded-3xl overflow-hidden shadow-2xl bg-gray-200 aspect-[4/3] flex items-center justify-center border-4 border-white">
+                <img src="assets/professional_group_image.png" alt="Professional Group"
+                    class="w-full h-full object-cover">
+
+            </div>
+            <div
+                class="absolute bottom-8 -left-4 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-2xl flex items-center gap-4 float-animation border border-white">
+                <div class="bg-green-100 p-2 rounded-lg text-green-600">
+                    <i class="fas fa-chart-line text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Daily Active Jobs</p>
+                    <p class="text-xl font-extrabold text-slate-800">50,000+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mission Section -->
+    <section class="bg-white py-24 px-6 border-t border-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-12 h-1 bg-green-500 mx-auto mb-10 rounded-full"></div>
+
+            <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
+                Rozgar is not charity. <br>
+                Rozgar is <span class="text-blue-600 underline decoration-blue-200 underline-offset-8">dignity</span>.
+                <br>
+                Rozgar is a <span class="text-green-600">right</span>.
+            </h2>
+
+            <p class="text-gray-500 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
+                We believe employment is the foundation of self-respect. We are building India's most trusted workforce
+                infrastructure, connecting millions to meaningful livelihoods.
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-20">
+                <a href="about.html"
+                    class="group border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-600 hover:text-white transition-all">
+                    Read our Mission
+                    <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                </a>
+                <a href="jobs.html" class="text-slate-500 font-bold hover:text-blue-600 transition-colors">
+                    View Openings
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-gray-100">
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-blue-600 mb-1">2.5M+</p>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Active Workers</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-blue-600 mb-1">15k+</p>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Verified Employers</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-blue-600 mb-1">600+</p>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Cities Covered</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-green-600 mb-1">100%</p>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Verified Jobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Category Preview -->
+    <div class="bg-white border-t border-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <a href="jobs.html"
+                class="category-card flex items-center gap-4 cursor-pointer text-gray-600 font-bold text-lg hover:text-blue-600 transition">
+                <i class="fas fa-truck text-2xl"></i> Logistics
+            </a>
+            <a href="jobs.html"
+                class="category-card flex items-center gap-4 cursor-pointer text-gray-600 font-bold text-lg hover:text-blue-600 transition">
+                <i class="fas fa-store text-2xl"></i> Retail
+            </a>
+            <a href="jobs.html"
+                class="category-card flex items-center gap-4 cursor-pointer text-gray-600 font-bold text-lg hover:text-blue-600 transition">
+                <i class="fas fa-industry text-2xl"></i> Manufacturing
+            </a>
+            <a href="jobs.html"
+                class="category-card flex items-center gap-4 cursor-pointer text-gray-600 font-bold text-lg hover:text-blue-600 transition">
+                <i class="fas fa-headset text-2xl"></i> BPO/KPO
+            </a>
+        </div>
+    </div>
+
+    <!-- Why Choose UpGreat Rozgar -->
+    <section class="bg-slate-50 py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-20">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="h-px w-12 bg-blue-600"></span>
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The UpGreat Advantage</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                    Built for Bharat's <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">Next-Gen
+                        Workforce.</span>
+                </h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                    We understand India's employment landscape better than anyone. We’ve replaced slow portals with a
+                    high-velocity execution engine.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-blue-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-map-marked-alt text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                        <i class="fas fa-map-marked-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Pan-India Reach</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        600+ cities covered with active on-ground presence. From tier-1 metros to tier-3 towns, we find
+                        you talent wherever you operate.
+                    </p>
+                </div>
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-green-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-shield-alt text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-green-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-green-200">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">100% Verified</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Zero scams. Zero fake listings. Every employer and job post undergoes a strict verification
+                        protocol before going live.
+                    </p>
+                </div>
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-blue-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-bolt text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Lightning Fast</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Placement cycles down to 24-48 hours. Our automated matching ensures candidates are on-site
+                        while others are still screening.
+                    </p>
+                </div>
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-green-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-users text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-green-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-green-200">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">On-Ground Support</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Real human assistance. Our dedicated agents provide interview coordination and post-joining
+                        support to ensure retention.
+                    </p>
+                </div>
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-blue-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-language text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                        <i class="fas fa-language text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Vernacular First</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Available in Hindi, English, and 10+ regional languages. We speak the language of your workforce
+                        to ensure clarity and trust.
+                    </p>
+                </div>
+
+                <div
+                    class="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -bottom-4 opacity-5 text-green-600 group-hover:scale-110 transition-transform duration-500">
+                        <i class="fas fa-indian-rupee-sign text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-green-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-green-200">
+                        <i class="fas fa-indian-rupee-sign text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Always Free</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        No hidden registration fees for candidates. Our mission is to make work accessible, not
+                        expensive. 100% transparent.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Job Categories -->
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Popular
+                    Categories</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 mb-4">
+                    Find Jobs Across All Sectors
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    From entry-level to skilled positions, we have opportunities in every industry.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="jobs.html"
+                    class="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-lg transition-all cursor-pointer">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tools text-white text-xl"></i>
+                        </div>
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">High
+                            Demand</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Unskilled & Entry-Level</h3>
+                    <p class="text-gray-700 text-sm mb-4">Helpers, Loaders, Factory Workers</p>
+                    <div
+                        class="flex items-center text-blue-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        View Jobs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="jobs.html"
+                    class="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-lg transition-all cursor-pointer">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cogs text-white text-xl"></i>
+                        </div>
+                        <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">Skilled</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Technical & Skilled</h3>
+                    <p class="text-gray-700 text-sm mb-4">Electricians, Plumbers, Mechanics</p>
+                    <div
+                        class="flex items-center text-green-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        View Jobs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <a href="jobs.html"
+                    class="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-lg transition-all cursor-pointer">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-truck text-white text-xl"></i>
+                        </div>
+                        <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Trending</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Delivery & Logistics</h3>
+                    <p class="text-gray-700 text-sm mb-4">Drivers, Delivery Partners, Couriers</p>
+                    <div
+                        class="flex items-center text-purple-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        View Jobs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <a href="jobs.html"
+                    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg">
+                    Explore All Categories <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We're Different -->
+    <section class="bg-gradient-to-br from-slate-900 to-blue-900 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-blue-500/20 text-blue-200 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">The
+                    Difference</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mt-6 mb-4">
+                    Not Just Another Job Portal
+                </h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+                    We're an execution-driven hiring engine. Here's how we compare to traditional platforms.
+                </p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl overflow-hidden">
+                <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+                    <div class="p-8 text-center">
+                        <div class="text-blue-200 text-sm font-semibold mb-2">Traditional Portals</div>
+                        <div class="text-white/60 text-xs">Just list jobs</div>
+                    </div>
+                    <div class="p-8 text-center bg-green-500/20">
+                        <div class="text-green-300 text-sm font-bold mb-2">UpGreat Rozgar</div>
+                        <div class="text-white font-semibold text-sm">End-to-end execution</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <div class="text-blue-200 text-sm font-semibold mb-2">Traditional Portals</div>
+                        <div class="text-white/60 text-xs">Online only</div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 border-t border-white/10">
+                    <div class="p-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-times-circle text-red-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold mb-1">No Ground Support</p>
+                                <p class="text-blue-200 text-sm">You're on your own after applying</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-green-500/10">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-bold mb-1">600+ City Network</p>
+                                <p class="text-green-200 text-sm">Local agents support you throughout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-times-circle text-red-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold mb-1">Slow Process</p>
+                                <p class="text-blue-200 text-sm">Weeks or months to get hired</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 border-t border-white/10">
+                    <div class="p-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-times-circle text-red-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold mb-1">Unverified Jobs</p>
+                                <p class="text-blue-200 text-sm">Many fake or outdated listings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-green-500/10">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-bold mb-1">100% Verified</p>
+                                <p class="text-green-200 text-sm">Every job and employer checked</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-times-circle text-red-400 mt-1"></i>
+                            <div>
+                                <p class="text-white font-semibold mb-1">Limited Scale</p>
+                                <p class="text-blue-200 text-sm">Can't handle bulk hiring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-green-500/20 border-t border-white/10 text-center">
+                    <p class="text-white font-bold text-lg mb-2">The UpGreat Rozgar Advantage</p>
+                    <p class="text-green-200 text-sm">24-48 hour hiring • Rozgar Melas • 10-10,000+ scale • Local
+                        language support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-br from-blue-600 to-blue-700 py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Ready to Get Started?
+            </h2>
+            <p class="text-blue-100 text-lg mb-12 max-w-2xl mx-auto">
+                Whether you're looking for work or hiring talent, UpGreat Rozgar connects you to real opportunities at
+                real scale.
+            </p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <a href="jobs.html"
+                    class="bg-white text-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all shadow-lg flex items-center gap-3">
+                    Find Jobs <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="employers.html"
+                    class="border-2 border-white/30 hover:border-white text-white px-10 py-4 rounded-xl font-bold text-lg transition-all flex items-center gap-3">
+                    Hire Staff <i class="fas fa-building"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto">
+
+            <div
+                class="flex flex-col lg:flex-row items-center justify-between bg-slate-50 p-6 md:p-10 rounded-3xl mb-16 gap-8">
+                <div class="flex items-center gap-4 text-center lg:text-left">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i class="fas fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Need Help Hiring or Finding a Job?</h4>
+                        <p class="text-sm text-gray-500">Call our helpline for immediate assistance</p>
+                    </div>
+                </div>
+
+                <div class="text-2xl md:text-3xl font-extrabold text-blue-600">
+                    +91 8851479441
+                </div>
+
+                <button
+                    class="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 transition-all shadow-lg shadow-green-100">
+                    <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+                </button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Job Seekers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="jobs.html" class="hover:text-blue-600">Search Jobs</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register Now</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Skill Training</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Safety Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Employers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="employers.html" class="hover:text-blue-600">Post a Job</a></li>
+                        <li><a href="employers.html" class="hover:text-blue-600">Bulk Hiring Solutions</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Pricing Plans</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Employer Case Studies</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Verification Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Company</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="about.html" class="hover:text-blue-600">About UpGreat</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Press & Media</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Legal & Resources</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Grievance Officer</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Fraud Alert</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1">
+                    <h5 class="font-bold text-slate-900 mb-6">Job Alerts & Updates</h5>
+                    <p class="text-gray-500 text-sm mb-4">Subscribe to stay updated on the latest opportunities.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Enter your email"
+                            class="bg-slate-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-blue-600">
+                        <button
+                            class="bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-all">Subscribe</button>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-3 flex items-center gap-1">
+                        <i class="fas fa-check-circle text-green-500"></i> No spam, unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div
+                    class="flex items-center gap-6 grayscale opacity-60 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                    <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-lg"></i> ISO 9001:2015</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-rocket text-lg"></i> Startup India</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-lock text-lg"></i> 100% Secure</span>
+                </div>
+
+                <div class="text-xs text-gray-400 font-medium">
+                    MADE IN INDIA <span class="ml-1">🇮🇳</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">© 2024 UpGreat Rozgar Solutions Pvt Ltd. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-blue-400 hover:text-white transition-all"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
