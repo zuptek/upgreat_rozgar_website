@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Freelancers - UpGreat Rozgar | Gig Work & Flexible Opportunities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-blue-700 font-bold text-xl flex items-center gap-2 cursor-pointer">
+                <div class="p-1 bg-blue-600 rounded text-white"><i class="fas fa-briefcase"></i></div>
+                UpGreat Rozgar
+            </a>
+
+            <div class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="jobs.html" class="hover:text-blue-600">Find Jobs</a>
+                <a href="freelancers.html" class="hover:text-blue-600 text-blue-600 font-bold">Freelancers</a>
+                <a href="employers.html" class="hover:text-blue-600">Hire Staff</a>
+                <a href="about.html" class="hover:text-blue-600">About Us</a>
+            </div>
+
+            <div class="hidden md:flex gap-4 items-center">
+                <button class="text-gray-700 font-medium px-4 py-2 hover:bg-gray-50 rounded-lg">Log in</button>
+                <button
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Sign
+                    up</button>
+            </div>
+
+            <button id="menuTrigger" class="md:hidden text-gray-700 text-2xl focus:outline-none p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b shadow-lg">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="index.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Home</a>
+                <a href="jobs.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Find Jobs</a>
+                <a href="freelancers.html" class="text-blue-600 font-bold py-2 border-b border-gray-50">Freelancers</a>
+                <a href="employers.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">Hire Staff</a>
+                <a href="about.html" class="text-gray-600 font-medium py-2 border-b border-gray-50">About Us</a>
+
+                <div class="flex flex-col gap-3 pt-4">
+                    <button
+                        class="w-full text-center py-3 text-blue-600 font-bold border-2 border-blue-600 rounded-xl hover:bg-blue-50">Log
+                        In</button>
+                    <button
+                        class="w-full text-center py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-md">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-600 to-blue-600 py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <span
+                class="bg-purple-500/20 text-purple-100 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">For
+                Freelancers & Gig Workers</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-6 mb-6">
+                Work On Your Terms.<br>Earn On Your Schedule.
+            </h1>
+            <p class="text-purple-100 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
+                Access thousands of flexible gig opportunities. From delivery to events, surveys to campaigns — find
+                work that fits your life.
+            </p>
+
+            <div class="bg-white p-2 rounded-2xl shadow-xl flex flex-col md:flex-row gap-2 max-w-3xl mx-auto">
+                <div class="flex-1 flex items-center px-4 border-b md:border-b-0 md:border-r border-gray-100">
+                    <i class="fas fa-search text-gray-400 mr-3"></i>
+                    <input type="text" placeholder="Gig type or skill" class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <div class="flex-1 flex items-center px-4">
+                    <i class="fas fa-map-marker-alt text-gray-400 mr-3"></i>
+                    <input type="text" placeholder="Your location" class="w-full py-3 outline-none text-gray-700">
+                </div>
+                <button class="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-xl font-bold transition">
+                    Find Gigs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gig Categories -->
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-purple-50 text-purple-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Popular
+                    Gig Categories</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 mb-4">
+                    Flexible Work Opportunities
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Choose from a wide range of gig work that matches your skills and availability.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div
+                    class="group bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-orange-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-motorcycle text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">High
+                            Demand</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Delivery & Logistics</h3>
+                    <p class="text-gray-700 mb-4">Food delivery, package delivery, courier services</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Flexible hours
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Daily payouts
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> No experience
+                            needed</li>
+                    </ul>
+                    <div
+                        class="flex items-center text-orange-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-blue-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-calendar-check text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">Trending</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Event & Promotion</h3>
+                    <p class="text-gray-700 mb-4">Event staff, promoters, brand ambassadors</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Weekend work
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Good pay rates
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Meet new people
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center text-blue-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-green-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-clipboard-list text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">Easy
+                            Start</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Survey & Data Collection</h3>
+                    <p class="text-gray-700 mb-4">Field surveys, market research, data entry</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Simple tasks
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Quick completion
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Work from
+                            anywhere</li>
+                    </ul>
+                    <div
+                        class="flex items-center text-green-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-red-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-red-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-flag text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Seasonal</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Campaign & Political</h3>
+                    <p class="text-gray-700 mb-4">Election work, campaign staff, field coordinators</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Short-term
+                            projects</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Bulk
+                            opportunities</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Team environment
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center text-red-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-indigo-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-camera text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">Creative</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Content & Media</h3>
+                    <p class="text-gray-700 mb-4">Photography, videography, content creation</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Project-based
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Build portfolio
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Creative freedom
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center text-indigo-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-2xl hover:shadow-xl transition-all cursor-pointer border border-teal-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                        </div>
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">Growing</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Teaching & Training</h3>
+                    <p class="text-gray-700 mb-4">Tutoring, skill training, workshop facilitation</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Share knowledge
+                        </li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Flexible
+                            schedule</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Good earnings
+                        </li>
+                    </ul>
+                    <div
+                        class="flex items-center text-teal-600 font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                        Browse Gigs <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Freelance with UpGreat -->
+    <section class="bg-slate-50 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-purple-50 text-purple-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Why
+                    Choose Us</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 mb-4">
+                    The Freelancer Advantage
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    We've built the platform with freelancers in mind. Your flexibility, our support.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-clock text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Work Anytime</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Choose gigs that fit your schedule. Morning, evening, or weekend — you decide when to work.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Quick Payments</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Get paid fast. Many gigs offer daily or weekly payouts directly to your account.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Easy App Access</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Find gigs, track earnings, and manage your work — all from your smartphone.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Verified Clients</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        All clients are verified. Work with confidence knowing you'll get paid for your efforts.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Simple
+                    Process</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 mb-4">
+                    Start Earning in 3 Steps
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Getting started is quick and easy. Begin your freelance journey today.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+                        1
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Sign Up Free</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Create your profile in minutes. Add your skills, location, and availability. No fees, no
+                        charges.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+                        2
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Browse & Apply</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Find gigs that match your skills and schedule. Apply with one tap. Get instant notifications.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+                        3
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Work & Earn</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Complete the gig, submit your work, and get paid. Build your reputation and unlock more
+                        opportunities.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-16 text-center">
+                <button
+                    class="bg-purple-600 hover:bg-purple-700 text-white px-12 py-5 rounded-xl font-bold text-lg transition-all shadow-lg inline-flex items-center gap-3">
+                    Get Started Now <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="text-gray-500 text-sm mt-4">
+                    <i class="fas fa-check-circle text-green-500"></i> Free forever • No hidden fees • Instant approval
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="bg-gradient-to-br from-purple-600 to-blue-600 py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Join 50,000+ Freelancers
+            </h2>
+            <p class="text-purple-100 text-lg mb-12 max-w-2xl mx-auto">
+                Thousands of freelancers are already earning flexible income through UpGreat Rozgar.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white font-bold">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-white font-bold">Rajesh Kumar</p>
+                            <p class="text-purple-200 text-sm">Delivery Partner</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 text-sm leading-relaxed">
+                        "I earn ₹15,000+ monthly working just evenings. Perfect for my schedule and the payouts are
+                        always on time."
+                    </p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white font-bold">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-white font-bold">Priya Sharma</p>
+                            <p class="text-purple-200 text-sm">Event Staff</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 text-sm leading-relaxed">
+                        "Weekend events pay really well. I've worked at 20+ events in 3 months and made great
+                        connections."
+                    </p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white font-bold">
+                            AM
+                        </div>
+                        <div>
+                            <p class="text-white font-bold">Amit Mehta</p>
+                            <p class="text-purple-200 text-sm">Survey Collector</p>
+                        </div>
+                    </div>
+                    <p class="text-white/90 text-sm leading-relaxed">
+                        "Simple work, good pay. I complete surveys during my free time and earn extra income every
+                        week."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div
+                class="flex flex-col lg:flex-row items-center justify-between bg-slate-50 p-6 md:p-10 rounded-3xl mb-16 gap-8">
+                <div class="flex items-center gap-4 text-center lg:text-left">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                        <i class="fas fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Need Help Finding Gigs?</h4>
+                        <p class="text-sm text-gray-500">Call our helpline for immediate assistance</p>
+                    </div>
+                </div>
+
+                <div class="text-2xl md:text-3xl font-extrabold text-purple-600">
+                    +91 85869 65553
+                </div>
+
+                <a href="https://wa.me/918586965553" target="_blank" rel="noopener noreferrer"
+                    class="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 transition-all shadow-lg shadow-green-100">
+                    <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Job Seekers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="jobs.html" class="hover:text-blue-600">Search Jobs</a></li>
+                        <li><a href="freelancers.html" class="hover:text-purple-600">Find Gigs</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Register Now</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Skill Training</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">For Employers</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="employers.html" class="hover:text-blue-600">Post a Job</a></li>
+                        <li><a href="employers.html" class="hover:text-blue-600">Bulk Hiring Solutions</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Pricing Plans</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Employer Case Studies</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Verification Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Company</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="about.html" class="hover:text-blue-600">About UpGreat</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Press & Media</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-6">Legal & Resources</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-blue-600">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Grievance Officer</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Fraud Alert</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 lg:col-span-1">
+                    <h5 class="font-bold text-slate-900 mb-6">Gig Alerts & Updates</h5>
+                    <p class="text-gray-500 text-sm mb-4">Subscribe to stay updated on the latest gig opportunities.</p>
+                    <div class="flex flex-col gap-2">
+                        <input type="email" placeholder="Enter your email"
+                            class="bg-slate-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-purple-600">
+                        <button
+                            class="bg-purple-600 text-white font-bold py-3 rounded-lg hover:bg-purple-700 transition-all">Subscribe</button>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-3 flex items-center gap-1">
+                        <i class="fas fa-check-circle text-green-500"></i> No spam, unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div
+                    class="flex items-center gap-6 grayscale opacity-60 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                    <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-lg"></i> ISO 9001:2015</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-rocket text-lg"></i> Startup India</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-lock text-lg"></i> 100% Secure</span>
+                </div>
+
+                <div class="text-xs text-gray-400 font-medium">
+                    MADE IN INDIA <span class="ml-1">🇮🇳</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">© 2024 UpGreat Rozgar Solutions Pvt Ltd. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/company/upgreat-rozgar/" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-purple-600 hover:text-white transition-all"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/181wD4PDMa/?mibextid=wwXIfr" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-purple-600 hover:text-white transition-all"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/UpGreatRozgar" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-purple-400 hover:text-white transition-all"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/upgreatrozgar?igsh=MTBibWRyNXZoN2FkYw==" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@upgreatrozgar?si=z-PcY6BBnWxPn7pj" target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-all"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://pin.it/4zz4Pf5Ch" target="_blank" rel="noopener noreferrer"
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-red-700 hover:text-white transition-all"><i
+                            class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
