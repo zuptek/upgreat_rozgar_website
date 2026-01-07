@@ -1,67 +1,67 @@
- 
-        document.addEventListener('DOMContentLoaded', () => {
-            const findJobsBtn = document.getElementById('findJobsBtn');
-            const jobSearch = document.getElementById('jobSearch');
-            const locationSearch = document.getElementById('locationSearch');
 
-            // Handle Search Click
-            findJobsBtn.addEventListener('click', () => {
-                const job = jobSearch.value;
-                const loc = locationSearch.value;
+document.addEventListener('DOMContentLoaded', () => {
+    const findJobsBtn = document.getElementById('findJobsBtn');
+    const jobSearch = document.getElementById('jobSearch');
+    const locationSearch = document.getElementById('locationSearch');
 
-                if(job || loc) {
-                    alert(`Searching for ${job || 'any job'} in ${loc || 'your area'}...`);
-                } else {
-                    alert('Please enter a job title or location to start searching.');
-                }
-            });
+    // Handle Search Click
+    findJobsBtn.addEventListener('click', () => {
+        const job = jobSearch.value;
+        const loc = locationSearch.value;
 
-            // Category Click Simulation
-            const categories = document.querySelectorAll('.category-card');
-            categories.forEach(cat => {
-                cat.addEventListener('click', function() {
-                    const name = this.innerText.trim();
-                    jobSearch.value = name;
-                    jobSearch.focus();
-                });
-            });
+        if (job || loc) {
+            alert(`Searching for ${job || 'any job'} in ${loc || 'your area'}...`);
+        } else {
+            alert('Please enter a job title or location to start searching.');
+        }
+    });
 
-            // Navbar scroll effect
-            window.addEventListener('scroll', () => {
-                const nav = document.querySelector('nav');
-                if (window.scrollY > 10) {
-                    nav.classList.add('shadow-md');
-                } else {
-                    nav.classList.remove('shadow-md');
-                }
-            });
-        });
-
-        
- 
-    document.querySelectorAll('.hover-glow').forEach(el => {
-        el.addEventListener('mousemove', e => {
-            const rect = el.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            el.style.setProperty('--x', `${x}px`);
-            el.style.setProperty('--y', `${y}px`);
-        });
-
-        el.addEventListener('mouseleave', () => {
-            el.style.removeProperty('--x');
-            el.style.removeProperty('--y');
+    // Category Click Simulation
+    const categories = document.querySelectorAll('.category-card');
+    categories.forEach(cat => {
+        cat.addEventListener('click', function () {
+            const name = this.innerText.trim();
+            jobSearch.value = name;
+            jobSearch.focus();
         });
     });
 
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 10) {
+            nav.classList.add('shadow-md');
+        } else {
+            nav.classList.remove('shadow-md');
+        }
+    });
+});
 
 
 
-    document.addEventListener('DOMContentLoaded', () => {
+document.querySelectorAll('.hover-glow').forEach(el => {
+    el.addEventListener('mousemove', e => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        el.style.setProperty('--x', `${x}px`);
+        el.style.setProperty('--y', `${y}px`);
+    });
+
+    el.addEventListener('mouseleave', () => {
+        el.style.removeProperty('--x');
+        el.style.removeProperty('--y');
+    });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
     // Selection feedback for cards
     const roleCards = document.querySelectorAll('.group.bg-white');
-    
+
     roleCards.forEach(card => {
         card.addEventListener('click', () => {
             const roleName = card.querySelector('h3').innerText;
@@ -137,20 +137,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const stats = document.querySelectorAll('.text-3xl');
-    
+
     const animateValue = (obj, start, end, duration) => {
         let startTimestamp = null;
         const step = (timestamp) => {
             if (!startTimestamp) startTimestamp = timestamp;
             const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            
+
             // Handle percentage vs Millions formatting
-            if(end === 100) {
+            if (end === 100) {
                 obj.innerHTML = Math.floor(progress * end) + "%";
             } else {
                 obj.innerHTML = (progress * end).toFixed(1).replace('.0', '') + (end > 1000 ? "M+" : "k+");
             }
-            
+
             if (progress < 1) {
                 window.requestAnimationFrame(step);
             }
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Use Intersection Observer to trigger when visible
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
+            if (entry.isIntersecting) {
                 animateValue(stats[0], 0, 2.5, 2000); // 2.5M
                 animateValue(stats[1], 0, 15, 2000);  // 15k
                 animateValue(stats[2], 0, 600, 2000); // 600
@@ -176,13 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Newsletter Validation
-    const subscribeBtn = document.querySelector('button.bg-blue-600');
-    const emailInput = document.querySelector('input[type="email"]');
+    const subscribeBtn = document.getElementById('newsletterBtn');
+    const emailInput = document.getElementById('newsletterEmail');
 
     subscribeBtn.addEventListener('click', () => {
-        if(emailInput.value.includes('@')) {
+        if (emailInput.value.includes('@')) {
             subscribeBtn.innerText = "Subscribed!";
-            subscribeBtn.classList.replace('bg-blue-600', 'bg-green-500');
+            subscribeBtn.classList.remove('bg-blue-600', 'bg-purple-600');
+            subscribeBtn.classList.add('bg-green-500');
             emailInput.value = "";
         } else {
             alert("Please enter a valid email address.");
@@ -197,19 +198,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuTrigger = document.getElementById('menuTrigger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = menuTrigger.querySelector('i');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuTrigger = document.getElementById('menuTrigger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = menuTrigger.querySelector('i');
 
-        menuTrigger.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            
-            // Toggle between Hamburger and Close icon
-            if (!isHidden) {
-                menuIcon.classList.replace('fa-bars', 'fa-times');
-            } else {
-                menuIcon.classList.replace('fa-times', 'fa-bars');
-            }
-        });
+    menuTrigger.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+
+        // Toggle between Hamburger and Close icon
+        if (!isHidden) {
+            menuIcon.classList.replace('fa-bars', 'fa-times');
+        } else {
+            menuIcon.classList.replace('fa-times', 'fa-bars');
+        }
     });
+});

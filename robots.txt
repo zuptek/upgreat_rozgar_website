@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://upgreatrozgar.com/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1
+
+# Block specific paths if needed (examples below, currently allowing all)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /*.json$
+# Disallow: /*.xml$
+
+# Allow specific bots (all allowed by default)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
